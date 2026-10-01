@@ -1,0 +1,21 @@
+{
+  "name": "Mi Repositorio PS5 Custom",
+  "payloads": [
+    {
+      "name": "Pkg-sender",
+      "filename": "pkg-receiver.elf",
+      "url": "https://github.com/Loopayeh/pkg-sender/releases/download/v1.2.8/pkg-receiver.elf",
+      "description": "PKG Sender installs PlayStation games over LAN from your PC: pick games, they queue up and install on the console.",
+      "version": "v1.2.7",
+      "category": "Utilities & Tools"
+    },
+    {
+      "name": "Shadowmountplus Pre-release",
+      "filename": "shadowmountplus.elf",
+      "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta3/shadowmountplus.elf",
+      "description": "ShadowMountPlus Pre-releases.",
+      "version": "Prerelease",
+      "category": "Development"
+    }
+  ]
+}
