@@ -2,19 +2,20 @@ name: Auto-Update PS5 Payloads JSON
 
 on:
   schedule:
-    # Se ejecuta automáticamente todos los días a las 00:00 UTC
     - cron: '0 0 * * *'
-  workflow_dispatch: # Permite ejecutar el proceso manualmente con un botón
+  workflow_dispatch:
 
 jobs:
   update-json:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Otorga permisos para que el bot edite tu payloads.json
+      contents: write # Otorga permisos explícitos para hacer git push
 
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Asegura descargar todo el historial de git
 
       - name: Configurar Python
         uses: actions/setup-python@v5
@@ -29,4 +30,11 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add payloads.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update: Últimas versiones de payloads" && git push)
+          
+          # Verifica si hay cambios antes de hacer commit/push para evitar el exit code 128
+          if ! git diff --staged --quiet; then
+            git commit -m "Auto-update: Últimas versiones de payloads"
+            git push
+          else
+            echo "No se detectaron cambios en payloads.json."
+          fi
