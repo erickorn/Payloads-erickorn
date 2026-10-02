@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write # Otorga permisos de escritura globales al token del workflow
+  contents: write
 
 jobs:
   update-json:
@@ -14,13 +14,13 @@ jobs:
 
     steps:
       - name: Descargar repositorio
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
       - name: Configurar Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v5.4.0
         with:
           python-version: '3.x'
 
@@ -31,11 +31,12 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add payloads.json
+          
+          git add -u
           
           if ! git diff --staged --quiet; then
             git commit -m "Auto-update: Últimas versiones de payloads"
             git push origin HEAD:${{ github.ref }}
           else
-            echo "No se detectaron cambios en payloads.json."
+            echo "No se detectaron cambios en el repositorio."
           fi
