@@ -40,6 +40,14 @@
       "description": "Tienda de aplicaciones",
       "version": "v2.0.6",
       "category": "System and Mounts"
+    },
+    	{
+      "name": "LegacyJB",
+      "filename": "LegacyJB.elf",
+      "url": "https://github.com/Phoenixx1202/LegacyJB/releases/download/1.2.1/LegacyJB.elf",
+      "description": "Tienda de aplicaciones",
+      "version": "v1.2.1",
+      "category": "Tiendas"
     }
   ]
 }
