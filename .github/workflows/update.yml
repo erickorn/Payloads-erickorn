@@ -5,17 +5,19 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write # Otorga permisos de escritura globales al token del workflow
+
 jobs:
   update-json:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # Otorga permisos explícitos para hacer git push
 
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Asegura descargar todo el historial de git
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - name: Configurar Python
         uses: actions/setup-python@v5
@@ -31,10 +33,9 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add payloads.json
           
-          # Verifica si hay cambios antes de hacer commit/push para evitar el exit code 128
           if ! git diff --staged --quiet; then
             git commit -m "Auto-update: Últimas versiones de payloads"
-            git push
+            git push origin HEAD:${{ github.ref }}
           else
             echo "No se detectaron cambios en payloads.json."
           fi
