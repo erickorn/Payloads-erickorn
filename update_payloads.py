@@ -31,6 +31,18 @@ PAYLOAD_CONFIGS = [
         "repo": "pegasus-ps5/pegasus-dl",
         "asset_pattern": r"^pegasus_dl.*\.elf$",
         "include_prereleases": False
+    },
+    {
+        "name": "Apr-emu-updater",
+        "repo": "tsuramatsu1/apr-emu-updater",
+        "asset_pattern": r"^apr_emu_updater.*\.elf$",
+        "include_prereleases": False
+    },
+    {
+        "name": "LegacyJB",
+        "repo": "Phoenixx1202/LegacyJB",
+        "asset_pattern": r"^LegacyJB.*\.elf$",
+        "include_prereleases": False
     }
 ]
 
