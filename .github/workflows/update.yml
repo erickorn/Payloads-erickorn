@@ -1,0 +1,32 @@
+name: Auto-Update PS5 Payloads JSON
+
+on:
+  schedule:
+    # Se ejecuta automáticamente todos los días a las 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Permite ejecutar el proceso manualmente con un botón
+
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Otorga permisos para que el bot edite tu payloads.json
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Ejecutar script de actualización
+        run: python update_payloads.py
+
+      - name: Guardar y subir cambios
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add payloads.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update: Últimas versiones de payloads" && git push)
