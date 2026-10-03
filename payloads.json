@@ -48,6 +48,14 @@
       "description": "Tienda de aplicaciones",
       "version": "1.2.1",
       "category": "Tiendas"
+    },
+    {
+      "name": "Ghostpad",
+      "filename": "Ghostpad_v1.elf",
+      "url": "https://github.com/erickorn/Payloads-erickorn/releases/download/Payloads/Ghostpad_v1.0.0.elf",
+      "description": "Tienda de aplicaciones",
+      "version": "1.0.0",
+      "category": "Utilidades"
     }
   ]
 }
