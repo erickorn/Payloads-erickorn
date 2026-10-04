@@ -4,9 +4,9 @@
     {
       "name": "Direct Package Installer (PKG Sender)",
       "filename": "pkg-receiver.elf",
-      "url": "https://github.com/Loopayeh/pkg-sender/releases/download/v1.2.8/pkg-receiver.elf",
+      "url": "https://github.com/Loopayeh/pkg-sender/releases/download/v1.2.9/pkg-receiver.elf",
       "description": "Utilidad para la instalación remota de archivos PKG desde PC.",
-      "version": "v1.2.8",
+      "version": "v1.2.9",
       "category": "Utilities"
     },
     {
