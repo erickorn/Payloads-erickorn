@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Direct Package Installer (PKG Sender)",
+    "repo": "Loopayeh/pkg-sender",
+    "asset_pattern": "^pkg-receiver.*\\.elf$",
+    "category": "Utilities",
+    "description": "Utilidad para la instalación remota de archivos PKG desde PC."
+  },
+  {
+    "name": "ShadowMountPlus (Pre-Release)",
+    "repo": "drakmor/ShadowMountPlus",
+    "asset_pattern": "^shadowmountplus.*\\.elf$",
+    "include_prereleases": true,
+    "category": "System and Mounts",
+    "description": "Herramienta para gestión de montajes del sistema de archivos."
+  },
+  {
+    "name": "KFStuff-Lite (Drakmor)",
+    "repo": "drakmor/kstuff-lite",
+    "asset_pattern": "^(kfstuff|kstuff).*\\.elf$",
+    "include_prereleases": true,
+    "category": "Kernel Tools",
+    "description": "Versión ligera de las utilidades de kernel de Drakmor."
+  },
+  {
+    "name": "Pegasus DL",
+    "repo": "pegasus-ps5/pegasus-dl",
+    "asset_pattern": "^pegasus_dl.*\\.elf$",
+    "category": "Tiendas",
+    "description": "Tienda de aplicaciones para PS5."
+  },
+  {
+    "name": "Apr-emu-updater",
+    "repo": "tsuramatsu1/apr-emu-updater",
+    "asset_pattern": "^apr_emu_updater.*\\.elf$",
+    "category": "Utilities",
+    "description": "Actualizador de emuladores para PS5."
+  },
+  {
+    "name": "LegacyJB",
+    "repo": "Phoenixx1202/LegacyJB",
+    "asset_pattern": "^LegacyJB.*\\.elf$",
+    "category": "Jailbreak",
+    "description": "Herramientas de ejecución LegacyJB."
+  }
+]
