@@ -3,7 +3,7 @@
   "payloads": [
     {
       "name": "Direct Package Installer (PKG Sender)",
-      "filename": "pkg-receiver.elf",
+      "filename": "pkg-receiver-1.2.9.elf",
       "url": "https://github.com/Loopayeh/pkg-sender/releases/download/v1.2.9/pkg-receiver.elf",
       "description": "Utilidad para la instalación remota de archivos PKG desde PC.",
       "version": "v1.2.9",
@@ -11,7 +11,7 @@
     },
     {
       "name": "ShadowMountPlus (Pre-Release)",
-      "filename": "shadowmountplus.elf",
+      "filename": "shadowmountplus-1.7beta4.elf",
       "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta4/shadowmountplus.elf",
       "description": "Versión preliminar de la herramienta para gestión de montajes del sistema de archivos.",
       "version": "1.7beta4",
@@ -19,7 +19,7 @@
     },
     {
       "name": "KFStuff-Lite (Drakmor)",
-      "filename": "kstuff.elf",
+      "filename": "kstuff-1.2-dr-test2.elf",
       "url": "https://github.com/drakmor/kstuff-lite/releases/download/1.2-dr-test2/kstuff.elf",
       "description": "Versión ligera de las utilidades de kernel de Drakmor.",
       "version": "1.2-dr-test2",
@@ -27,7 +27,7 @@
     },
     {
       "name": "Pegasus DL",
-      "filename": "pegasus_dl.elf",
+      "filename": "pegasus_dl-1.10.1.elf",
       "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.10.1/pegasus_dl.elf",
       "description": "Tienda de aplicaciones",
       "version": "v1.10.1",
@@ -43,7 +43,7 @@
     },
     {
       "name": "LegacyJB",
-      "filename": "LegacyJB.elf",
+      "filename": "LegacyJB-1.2.1.elf",
       "url": "https://github.com/Phoenixx1202/LegacyJB/releases/download/1.2.1/LegacyJB.elf",
       "description": "Tienda de aplicaciones",
       "version": "1.2.1",
