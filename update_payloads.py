@@ -17,8 +17,7 @@ PAYLOAD_CONFIGS = [
         "name": "ShadowMountPlus (Pre-Release)",
         "repo": "drakmor/ShadowMountPlus",
         "asset_pattern": r"^shadowmountplus.*\.elf$",
-        "include_prereleases": True,
-        "is_raw": True
+        "include_prereleases": True
     },
     {
         "name": "KFStuff-Lite (Drakmor)",
