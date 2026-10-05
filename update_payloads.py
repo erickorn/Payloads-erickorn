@@ -3,47 +3,9 @@ import re
 import urllib.request
 import urllib.error
 
-INPUT_FILE = "payloads.json"
+SOURCES_FILE = "sources.json"
 OUTPUT_FILE = "payloads.json"
-
-PAYLOAD_CONFIGS = [
-    {
-        "name": "Direct Package Installer (PKG Sender)",
-        "repo": "Loopayeh/pkg-sender",
-        "asset_pattern": r"^pkg-receiver.*\.elf$",
-        "include_prereleases": False
-    },
-    {
-        "name": "ShadowMountPlus (Pre-Release)",
-        "repo": "drakmor/ShadowMountPlus",
-        "asset_pattern": r"^shadowmountplus.*\.elf$",
-        "include_prereleases": True
-    },
-    {
-        "name": "KFStuff-Lite (Drakmor)",
-        "repo": "drakmor/kstuff-lite",
-        "asset_pattern": r"^(kfstuff|kstuff).*\.elf$",
-        "include_prereleases": True
-    },
-    {
-        "name": "Pegasus DL",
-        "repo": "pegasus-ps5/pegasus-dl",
-        "asset_pattern": r"^pegasus_dl.*\.elf$",
-        "include_prereleases": False
-    },
-    {
-        "name": "Apr-emu-updater",
-        "repo": "tsuramatsu1/apr-emu-updater",
-        "asset_pattern": r"^apr_emu_updater.*\.elf$",
-        "include_prereleases": False
-    },
-    {
-        "name": "LegacyJB",
-        "repo": "Phoenixx1202/LegacyJB",
-        "asset_pattern": r"^LegacyJB.*\.elf$",
-        "include_prereleases": False
-    }
-]
+REPO_TITLE = "Mi Repositorio PS5 Custom"
 
 def fetch_json(url):
     req = urllib.request.Request(
@@ -75,11 +37,7 @@ def get_latest_release(repo_path, include_prereleases=False):
         return fetch_json(url)
 
 def make_versioned_filename(original_name, tag_name):
-    """
-    Inserta la versión en el nombre del archivo si este no la contiene.
-    Ejemplo: 'shadowmountplus.elf' + '1.7beta3' -> 'shadowmountplus-1.7beta3.elf'
-    """
-    clean_tag = tag_name.lstrip('v')  # Elimina la 'v' inicial si está presente
+    clean_tag = tag_name.lstrip('v')
     if clean_tag.lower() in original_name.lower():
         return original_name
     
@@ -91,29 +49,32 @@ def make_versioned_filename(original_name, tag_name):
 
 def update_payloads():
     try:
-        with open(INPUT_FILE, "r", encoding="utf-8") as f:
-            data = json.load(f)
+        with open(SOURCES_FILE, "r", encoding="utf-8") as f:
+            sources = json.load(f)
     except FileNotFoundError:
-        print(f"[ERROR] No se encontró el archivo {INPUT_FILE}")
+        print(f"[ERROR] No se encontró el archivo de fuentes {SOURCES_FILE}")
         return
 
-    payloads = data.get("payloads", [])
+    updated_payloads = []
 
-    for config in PAYLOAD_CONFIGS:
-        target_name = config["name"]
-        repo = config["repo"]
-        pattern = re.compile(config["asset_pattern"], re.IGNORECASE)
-        include_prereleases = config.get("include_prereleases", False)
-        is_raw = config.get("is_raw", False)
+    for item in sources:
+        target_name = item.get("name")
+        repo = item.get("repo")
+        pattern_str = item.get("asset_pattern", r".*\.elf$")
+        pattern = re.compile(pattern_str, re.IGNORECASE)
+        include_prereleases = item.get("include_prereleases", False)
+        is_raw = item.get("is_raw", False)
+        category = item.get("category", "General")
+        description = item.get("description", "Payload para PS5")
 
-        print(f"\n--- Buscando actualizaciones para: {target_name} ({repo}) ---")
+        print(f"\n--- Procesando: {target_name} ({repo}) ---")
         release = get_latest_release(repo, include_prereleases)
 
         if not release:
-            print(f"[ADVERTENCIA] No se obtuvieron lanzamientos para {repo}. Se omite.")
+            print(f"[ADVERTENCIA] No se obtuvieron datos para {repo}. Se omite.")
             continue
 
-        tag_name = release.get("tag_name", "")
+        tag_name = release.get("tag_name", "v1.0")
         assets = release.get("assets", [])
 
         matching_asset = None
@@ -122,40 +83,36 @@ def update_payloads():
                 matching_asset = asset
                 break
 
-        for payload in payloads:
-            if payload.get("name") == target_name:
-                updated = False
-                
-                if matching_asset:
-                    raw_filename = matching_asset["name"]
-                    versioned_filename = make_versioned_filename(raw_filename, tag_name)
+        if matching_asset:
+            raw_filename = matching_asset["name"]
+            versioned_filename = make_versioned_filename(raw_filename, tag_name)
 
-                    download_url = matching_asset["browser_download_url"]
-                    if is_raw:
-                        download_url = f"https://raw.githubusercontent.com/{repo}/{tag_name}/{raw_filename}"
+            download_url = matching_asset["browser_download_url"]
+            if is_raw:
+                download_url = f"https://raw.githubusercontent.com/{repo}/{tag_name}/{raw_filename}"
 
-                    if payload.get("url") != download_url:
-                        print(f"  URL actualizada: {payload.get('url')} -> {download_url}")
-                        payload["url"] = download_url
-                        updated = True
+            payload_entry = {
+                "name": target_name,
+                "filename": versioned_filename,
+                "url": download_url,
+                "description": description,
+                "version": tag_name,
+                "category": category
+            }
+            updated_payloads.append(payload_entry)
+            print(f"  [OK] Agregado/Actualizado: {versioned_filename} ({tag_name})")
+        else:
+            print(f"[ADVERTENCIA] No se encontró un archivo .elf compatible en {repo}.")
 
-                    if payload.get("filename") != versioned_filename:
-                        print(f"  Filename actualizado: {payload.get('filename')} -> {versioned_filename}")
-                        payload["filename"] = versioned_filename
-                        updated = True
-
-                if tag_name and payload.get("version") != tag_name:
-                    print(f"  Versión actualizada: {payload.get('version')} -> {tag_name}")
-                    payload["version"] = tag_name
-                    updated = True
-
-                if not updated:
-                    print("  Ya se encuentra en la versión más reciente.")
+    output_data = {
+        "name": REPO_TITLE,
+        "payloads": updated_payloads
+    }
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
+        json.dump(output_data, f, indent=2, ensure_ascii=False)
 
-    print("\n¡Proceso de actualización completado!")
+    print("\n¡Catálogo payloads.json generado y actualizado con éxito!")
 
 if __name__ == "__main__":
     update_payloads()
