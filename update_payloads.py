@@ -17,7 +17,8 @@ PAYLOAD_CONFIGS = [
         "name": "ShadowMountPlus (Pre-Release)",
         "repo": "drakmor/ShadowMountPlus",
         "asset_pattern": r"^shadowmountplus.*\.elf$",
-        "include_prereleases": True
+        "include_prereleases": True,
+        "is_raw": True
     },
     {
         "name": "KFStuff-Lite (Drakmor)",
@@ -74,6 +75,21 @@ def get_latest_release(repo_path, include_prereleases=False):
         url = f"https://api.github.com/repos/{repo_path}/releases/latest"
         return fetch_json(url)
 
+def make_versioned_filename(original_name, tag_name):
+    """
+    Inserta la versión en el nombre del archivo si este no la contiene.
+    Ejemplo: 'shadowmountplus.elf' + '1.7beta3' -> 'shadowmountplus-1.7beta3.elf'
+    """
+    clean_tag = tag_name.lstrip('v')  # Elimina la 'v' inicial si está presente
+    if clean_tag.lower() in original_name.lower():
+        return original_name
+    
+    if original_name.lower().endswith('.elf'):
+        base = original_name[:-4]
+        return f"{base}-{clean_tag}.elf"
+    
+    return f"{original_name}-{clean_tag}"
+
 def update_payloads():
     try:
         with open(INPUT_FILE, "r", encoding="utf-8") as f:
@@ -112,18 +128,21 @@ def update_payloads():
                 updated = False
                 
                 if matching_asset:
+                    raw_filename = matching_asset["name"]
+                    versioned_filename = make_versioned_filename(raw_filename, tag_name)
+
                     download_url = matching_asset["browser_download_url"]
                     if is_raw:
-                        filename = matching_asset["name"]
-                        download_url = f"https://raw.githubusercontent.com/{repo}/{tag_name}/{filename}"
+                        download_url = f"https://raw.githubusercontent.com/{repo}/{tag_name}/{raw_filename}"
 
                     if payload.get("url") != download_url:
                         print(f"  URL actualizada: {payload.get('url')} -> {download_url}")
                         payload["url"] = download_url
                         updated = True
 
-                    if payload.get("filename") != matching_asset["name"]:
-                        payload["filename"] = matching_asset["name"]
+                    if payload.get("filename") != versioned_filename:
+                        print(f"  Filename actualizado: {payload.get('filename')} -> {versioned_filename}")
+                        payload["filename"] = versioned_filename
                         updated = True
 
                 if tag_name and payload.get("version") != tag_name:
