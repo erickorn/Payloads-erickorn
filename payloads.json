@@ -13,7 +13,7 @@
       "name": "ShadowMountPlus (Pre-Release)",
       "filename": "shadowmountplus-1.7beta4.elf",
       "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta4/shadowmountplus.elf",
-      "description": "Versión preliminar de la herramienta para gestión de montajes del sistema de archivos.",
+      "description": "Herramienta para gestión de montajes del sistema de archivos.",
       "version": "1.7beta4",
       "category": "System and Mounts"
     },
@@ -29,7 +29,7 @@
       "name": "Pegasus DL",
       "filename": "pegasus_dl-1.10.1.elf",
       "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.10.1/pegasus_dl.elf",
-      "description": "Tienda de aplicaciones",
+      "description": "Tienda de aplicaciones para PS5.",
       "version": "v1.10.1",
       "category": "Tiendas"
     },
@@ -37,25 +37,17 @@
       "name": "Apr-emu-updater",
       "filename": "apr_emu_updater_v2.0.6.elf",
       "url": "https://github.com/tsuramatsu1/apr-emu-updater/releases/download/v2.0.6/apr_emu_updater_v2.0.6.elf",
-      "description": "Tienda de aplicaciones",
+      "description": "Actualizador de emuladores para PS5.",
       "version": "v2.0.6",
-      "category": "System and Mounts"
+      "category": "Utilities"
     },
     {
       "name": "LegacyJB",
       "filename": "LegacyJB-1.2.1.elf",
       "url": "https://github.com/Phoenixx1202/LegacyJB/releases/download/1.2.1/LegacyJB.elf",
-      "description": "Tienda de aplicaciones",
+      "description": "Herramientas de ejecución LegacyJB.",
       "version": "1.2.1",
-      "category": "Tiendas"
-    },
-    {
-      "name": "Ghostpad",
-      "filename": "Ghostpad_v1.elf",
-      "url": "https://github.com/erickorn/Payloads-erickorn/releases/download/Payloads/Ghostpad_v1.0.0.elf",
-      "description": "Tienda de aplicaciones",
-      "version": "1.0.0",
-      "category": "Utilidades"
+      "category": "Jailbreak"
     }
   ]
 }
