@@ -56,6 +56,14 @@
       "description": "YetAnotherControllerEnabler is a homebrew payload for a PS5. It lets a controller from another console play on the PS5 by publishing a virtual DualSense and filling that pad with the other controller's buttons and sticks. The console treats the virtual pad like a DualSense: it can be assigned to a player, and games read it as a normal controller.",
       "version": "v0.0.1",
       "category": "Utilities"
+    },
+    {
+      "name": "blackbox",
+      "filename": "blackbox-1.0.7.elf",
+      "url": "https://github.com/D3ATHLY/blackbox/releases/download/v1.0.7/blackbox.elf",
+      "description": "BB",
+      "version": "v1.0.7",
+      "category": "Tiendas"
     }
   ]
 }
