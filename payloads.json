@@ -11,10 +11,10 @@
     },
     {
       "name": "ShadowMountPlus (Pre-Release)",
-      "filename": "shadowmountplus-1.7beta4.elf",
-      "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta4/shadowmountplus.elf",
+      "filename": "shadowmountplus-1.7beta5.elf",
+      "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta5/shadowmountplus.elf",
       "description": "Herramienta para gestión de montajes del sistema de archivos.",
-      "version": "1.7beta4",
+      "version": "1.7beta5",
       "category": "System and Mounts"
     },
     {
