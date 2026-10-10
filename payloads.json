@@ -27,10 +27,10 @@
     },
     {
       "name": "Pegasus DL",
-      "filename": "pegasus_dl-1.10.1.elf",
-      "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.10.1/pegasus_dl.elf",
+      "filename": "pegasus_dl-1.11.0.elf",
+      "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.11.0/pegasus_dl.elf",
       "description": "Tienda de aplicaciones para PS5.",
-      "version": "v1.10.1",
+      "version": "v1.11.0",
       "category": "Tiendas"
     },
     {
