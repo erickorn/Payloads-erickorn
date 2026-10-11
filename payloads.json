@@ -67,8 +67,8 @@
     },
     {
       "name": "Payloads-erickorn",
-      "filename": "Ghostpad_v1.0.0-Payloads.elf",
-      "url": "https://github.com/erickorn/Payloads-erickorn/releases/download/Payloads/Ghostpad_v1.0.0.elf",
+      "filename": "kstuff-fpkg-1.13-dr-test6-Payloads.elf",
+      "url": "https://github.com/erickorn/Payloads-erickorn/releases/download/Payloads/kstuff-fpkg-1.13-dr-test6.elf",
       "description": "Payloads personales",
       "version": "Payloads",
       "category": "Utilities"
