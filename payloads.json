@@ -64,6 +64,14 @@
       "description": "BB",
       "version": "v1.0.8",
       "category": "Tiendas"
+    },
+    {
+      "name": "Payloads-erickorn",
+      "filename": "Ghostpad_v1.0.0-Payloads.elf",
+      "url": "https://github.com/erickorn/Payloads-erickorn/releases/download/Payloads/Ghostpad_v1.0.0.elf",
+      "description": "Payloads personales",
+      "version": "Payloads",
+      "category": "Utilities"
     }
   ]
 }

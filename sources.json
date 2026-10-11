@@ -56,5 +56,12 @@
     "asset_pattern": ".*\\.elf$",
     "category": "Tiendas",
     "description": "BB"
+  },
+  {
+    "name": "Payloads-erickorn",
+    "repo": "erickorn/Payloads-erickorn",
+    "asset_pattern": ".*\\.elf$",
+    "category": "Utilities",
+    "description": "Payloads personales"
   }
 ]
