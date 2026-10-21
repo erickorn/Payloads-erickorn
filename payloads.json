@@ -11,10 +11,10 @@
     },
     {
       "name": "ShadowMountPlus (Pre-Release)",
-      "filename": "shadowmountplus-1.7beta6-fix2.elf",
-      "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta6-fix2/shadowmountplus.elf",
+      "filename": "shadowmountplus-1.7beta7.elf",
+      "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta7/shadowmountplus.elf",
       "description": "Herramienta para gestión de montajes del sistema de archivos.",
-      "version": "1.7beta6-fix2",
+      "version": "1.7beta7",
       "category": "System and Mounts"
     },
     {
@@ -59,10 +59,10 @@
     },
     {
       "name": "blackbox",
-      "filename": "blackbox-1.12.2.elf",
-      "url": "https://github.com/D3ATHLY/blackbox/releases/download/1.12.2/blackbox.elf",
+      "filename": "blackbox-1.12.3.elf",
+      "url": "https://github.com/D3ATHLY/blackbox/releases/download/1.12.3/blackbox.elf",
       "description": "BB",
-      "version": "1.12.2",
+      "version": "1.12.3",
       "category": "Tiendas"
     },
     {
