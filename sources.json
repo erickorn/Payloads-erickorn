@@ -63,5 +63,12 @@
     "asset_pattern": ".*\\.elf$",
     "category": "Utilities",
     "description": "Payloads personales"
+  },
+  {
+    "name": "ps5-linux-loader",
+    "repo": "soniciso1/ps5-linux-loader",
+    "asset_pattern": ".*\\.elf$",
+    "category": "System and Mounts",
+    "description": "Run Linux on PS5 - with 13.60 support including PS5 Pro (fork of ps5-linux/ps5-linux-loader)"
   }
 ]
