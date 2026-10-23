@@ -59,10 +59,10 @@
     },
     {
       "name": "blackbox",
-      "filename": "blackbox-1.12.4.elf",
-      "url": "https://github.com/D3ATHLY/blackbox/releases/download/1.12.4/blackbox.elf",
+      "filename": "blackbox-1.12.5.elf",
+      "url": "https://github.com/D3ATHLY/blackbox/releases/download/1.12.5/blackbox.elf",
       "description": "BB",
-      "version": "1.12.4",
+      "version": "1.12.5",
       "category": "Tiendas"
     },
     {
