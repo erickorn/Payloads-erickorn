@@ -70,5 +70,12 @@
     "asset_pattern": ".*\\.elf$",
     "category": "System and Mounts",
     "description": "Run Linux on PS5 - with 13.60 support including PS5 Pro (fork of ps5-linux/ps5-linux-loader)"
+  },
+  {
+    "name": "PS5-TabShifter",
+    "repo": "xvvulcanvx/PS5-TabShifter",
+    "asset_pattern": ".*\\.elf$",
+    "category": "Utilities",
+    "description": "Standalone PS5 on-console payload to move apps between Games/Media tabs and hide offline PSN bloatware (Universal FW 5.00 – 13.60)"
   }
 ]
