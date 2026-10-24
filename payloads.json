@@ -88,6 +88,14 @@
       "description": "Standalone PS5 on-console payload to move apps between Games/Media tabs and hide offline PSN bloatware (Universal FW 5.00 – 13.60)",
       "version": "v1.3.0",
       "category": "Utilities"
+    },
+    {
+      "name": "NeoEnabler",
+      "filename": "neo-manager-0.5.1.elf",
+      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.5.1/neo-manager.elf",
+      "description": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
+      "version": "v0.5.1",
+      "category": "System and Mounts"
     }
   ]
 }
