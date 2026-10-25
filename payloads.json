@@ -26,14 +26,6 @@
       "category": "Kernel Tools"
     },
     {
-      "name": "Pegasus DL",
-      "filename": "pegasus_dl-1.11.0.elf",
-      "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.11.0/pegasus_dl.elf",
-      "description": "Tienda de aplicaciones para PS5.",
-      "version": "v1.11.0",
-      "category": "Tiendas"
-    },
-    {
       "name": "Apr-emu-updater",
       "filename": "apr_emu_updater_v2.0.6.elf",
       "url": "https://github.com/tsuramatsu1/apr-emu-updater/releases/download/v2.0.6/apr_emu_updater_v2.0.6.elf",
@@ -91,10 +83,10 @@
     },
     {
       "name": "NeoEnabler",
-      "filename": "neo-manager-0.5.1.elf",
-      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.5.1/neo-manager.elf",
+      "filename": "neo-manager-0.5.2.elf",
+      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.5.2/neo-manager.elf",
       "description": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
-      "version": "v0.5.1",
+      "version": "v0.5.2",
       "category": "System and Mounts"
     }
   ]
