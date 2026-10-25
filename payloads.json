@@ -67,10 +67,10 @@
     },
     {
       "name": "ps5-linux-loader",
-      "filename": "ps5-linux-loader-2026.10.22-all11-13.elf",
-      "url": "https://github.com/soniciso1/ps5-linux-loader/releases/download/v2026.10.22-all11-13/ps5-linux-loader.elf",
+      "filename": "ps5-linux-loader-10xx-10.xx-support.elf",
+      "url": "https://github.com/soniciso1/ps5-linux-loader/releases/download/10.xx-support/ps5-linux-loader-10xx.elf",
       "description": "Run Linux on PS5 - with 13.60 support including PS5 Pro (fork of ps5-linux/ps5-linux-loader)",
-      "version": "v2026.10.22-all11-13",
+      "version": "10.xx-support",
       "category": "System and Mounts"
     },
     {
