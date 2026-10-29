@@ -10,6 +10,14 @@
       "category": "Utilities"
     },
     {
+      "name": "ShadowMountPlus (Pre-Release)",
+      "filename": "shadowmountplus-1.7beta10.elf",
+      "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta10/shadowmountplus.elf",
+      "description": "Herramienta para gestión de montajes del sistema de archivos.",
+      "version": "1.7beta10",
+      "category": "System and Mounts"
+    },
+    {
       "name": "KFStuff-Lite (Drakmor)",
       "filename": "kstuff-1.2-dr-test2.elf",
       "url": "https://github.com/drakmor/kstuff-lite/releases/download/1.2-dr-test2/kstuff.elf",
