@@ -75,10 +75,10 @@
     },
     {
       "name": "NeoEnabler",
-      "filename": "neo-manager-0.5.3.elf",
-      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.5.3/neo-manager.elf",
+      "filename": "neo-manager-0.6.0.elf",
+      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.6.0/neo-manager.elf",
       "description": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
-      "version": "v0.5.3",
+      "version": "v0.6.0",
       "category": "System and Mounts"
     }
   ]
