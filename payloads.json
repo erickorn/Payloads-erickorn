@@ -59,10 +59,10 @@
     },
     {
       "name": "ps5-linux-loader",
-      "filename": "ps5-linux-loader-all10-13-20261102-2026.11.02-all10-13.elf",
-      "url": "https://github.com/soniciso1/ps5-linux-loader/releases/download/v2026.11.02-all10-13/ps5-linux-loader-all10-13-20261102.elf",
+      "filename": "ps5-linux-loader-all10-13-20261103-pro-2026.11.03-all10-13-pro.elf",
+      "url": "https://github.com/soniciso1/ps5-linux-loader/releases/download/v2026.11.03-all10-13-pro/ps5-linux-loader-all10-13-20261103-pro.elf",
       "description": "Run Linux on PS5 - with 13.60 support including PS5 Pro (fork of ps5-linux/ps5-linux-loader)",
-      "version": "v2026.11.02-all10-13",
+      "version": "v2026.11.03-all10-13-pro",
       "category": "System and Mounts"
     },
     {
@@ -75,10 +75,10 @@
     },
     {
       "name": "NeoEnabler",
-      "filename": "neo-manager-0.6.1.elf",
-      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.6.1/neo-manager.elf",
+      "filename": "neo-manager-0.6.2.elf",
+      "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.6.2/neo-manager.elf",
       "description": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
-      "version": "v0.6.1",
+      "version": "v0.6.2",
       "category": "System and Mounts"
     }
   ]
