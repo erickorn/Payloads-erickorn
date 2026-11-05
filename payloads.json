@@ -51,8 +51,8 @@
     },
     {
       "name": "Payloads-erickorn",
-      "filename": "kstuff1.13-fpkg-dr-test7-restmode-Payloads.elf",
-      "url": "https://github.com/erickorn/Payloads-erickorn/releases/download/Payloads/kstuff1.13-fpkg-dr-test7-restmode.elf",
+      "filename": "kstuff1.13-fpkg-dr-test8-rest-Payloads.elf",
+      "url": "https://github.com/erickorn/Payloads-erickorn/releases/download/Payloads/kstuff1.13-fpkg-dr-test8-rest.elf",
       "description": "Payloads personales",
       "version": "Payloads",
       "category": "Utilities"
