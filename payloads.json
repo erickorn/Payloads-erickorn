@@ -67,10 +67,10 @@
     },
     {
       "name": "PS5-TabShifter",
-      "filename": "TabShifter-1.3.0.elf",
-      "url": "https://github.com/xvvulcanvx/PS5-TabShifter/releases/download/v1.3.0/TabShifter.elf",
+      "filename": "TabShifter-1.4.0.elf",
+      "url": "https://github.com/xvvulcanvx/PS5-TabShifter/releases/download/v1.4.0/TabShifter.elf",
       "description": "Standalone PS5 on-console payload to move apps between Games/Media tabs and hide offline PSN bloatware (Universal FW 5.00 – 13.60)",
-      "version": "v1.3.0",
+      "version": "v1.4.0",
       "category": "Utilities"
     },
     {
