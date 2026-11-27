@@ -80,6 +80,14 @@
       "description": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
       "version": "0.7.0",
       "category": "System and Mounts"
+    },
+    {
+      "name": "ps5-fpsunlocker-gta6",
+      "filename": "GTAVI.UnlockFPS_v1.14.elf",
+      "url": "https://github.com/HSgod/ps5-fpsunlocker-gta6/releases/download/v1.14/GTAVI.UnlockFPS_v1.14.elf",
+      "description": "Unlock FPS on Grand Theft Auto VI for jailbroken PS5",
+      "version": "v1.14",
+      "category": "Development"
     }
   ]
 }
