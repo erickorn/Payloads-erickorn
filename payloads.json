@@ -80,6 +80,14 @@
       "description": "Unlock FPS on Grand Theft Auto VI for jailbroken PS5",
       "version": "v1.16",
       "category": "Development"
+    },
+    {
+      "name": "VI-Patch",
+      "filename": "vi-patch-1.5.elf",
+      "url": "https://github.com/ZiZc3/VI-Patch/releases/download/v1.5/vi-patch.elf",
+      "description": "VI patches for PS5",
+      "version": "v1.5",
+      "category": "Utilities"
     }
   ]
 }

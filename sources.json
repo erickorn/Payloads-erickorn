@@ -84,5 +84,12 @@
     "asset_pattern": ".*\\.elf$",
     "category": "Development",
     "description": "Unlock FPS on Grand Theft Auto VI for jailbroken PS5"
+  },
+  {
+    "name": "VI-Patch",
+    "repo": "ZiZc3/VI-Patch",
+    "asset_pattern": ".*\\.elf$",
+    "category": "Utilities",
+    "description": "VI patches for PS5"
   }
 ]
