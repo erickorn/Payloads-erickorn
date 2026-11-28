@@ -58,14 +58,6 @@
       "category": "Utilities"
     },
     {
-      "name": "ps5-linux-loader",
-      "filename": "ps5-linux-loader-all10-13-20261103-pro-2026.11.03-all10-13-pro.elf",
-      "url": "https://github.com/soniciso1/ps5-linux-loader/releases/download/v2026.11.03-all10-13-pro/ps5-linux-loader-all10-13-20261103-pro.elf",
-      "description": "Run Linux on PS5 - with 13.60 support including PS5 Pro (fork of ps5-linux/ps5-linux-loader)",
-      "version": "v2026.11.03-all10-13-pro",
-      "category": "System and Mounts"
-    },
-    {
       "name": "PS5-TabShifter",
       "filename": "TabShifter-1.4.0.elf",
       "url": "https://github.com/xvvulcanvx/PS5-TabShifter/releases/download/v1.4.0/TabShifter.elf",
@@ -83,10 +75,10 @@
     },
     {
       "name": "ps5-fpsunlocker-gta6",
-      "filename": "GTAVI.UnlockFPS_v1.15.elf",
-      "url": "https://github.com/HSgod/ps5-fpsunlocker-gta6/releases/download/v1.15/GTAVI.UnlockFPS_v1.15.elf",
+      "filename": "GTAVI.UnlockFPS_v1.16.elf",
+      "url": "https://github.com/HSgod/ps5-fpsunlocker-gta6/releases/download/v1.16/GTAVI.UnlockFPS_v1.16.elf",
       "description": "Unlock FPS on Grand Theft Auto VI for jailbroken PS5",
-      "version": "v1.15",
+      "version": "v1.16",
       "category": "Development"
     }
   ]
