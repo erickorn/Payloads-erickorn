@@ -1,4 +1,85 @@
 {
   "name": "Mi Repositorio PS5 Custom",
-  "payloads": []
+  "payloads": [
+    {
+      "name": "Direct Package Installer (PKG Sender)",
+      "filename": "pkg-receiver-1.2.9.elf",
+      "url": "https://github.com/Loopayeh/pkg-sender/releases/download/v1.2.9/pkg-receiver.elf",
+      "description": "Utilidad para la instalación remota de archivos PKG desde PC.",
+      "version": "v1.2.9",
+      "category": "Utilities"
+    },
+    {
+      "name": "ShadowMountPlus (Pre-Release)",
+      "filename": "shadowmountplus-1.7beta12.elf",
+      "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta12/shadowmountplus.elf",
+      "description": "Herramienta para gestión de montajes del sistema de archivos.",
+      "version": "1.7beta12",
+      "category": "System and Mounts"
+    },
+    {
+      "name": "KFStuff-Lite (Drakmor)",
+      "filename": "kstuff-1.2-dr-test2.elf",
+      "url": "https://github.com/drakmor/kstuff-lite/releases/download/1.2-dr-test2/kstuff.elf",
+      "description": "Versión ligera de las utilidades de kernel de Drakmor.",
+      "version": "1.2-dr-test2",
+      "category": "Kernel Tools"
+    },
+    {
+      "name": "Apr-emu-updater",
+      "filename": "apr_emu_updater_v2.0.6.elf",
+      "url": "https://github.com/tsuramatsu1/apr-emu-updater/releases/download/v2.0.6/apr_emu_updater_v2.0.6.elf",
+      "description": "Actualizador de emuladores para PS5.",
+      "version": "v2.0.6",
+      "category": "Utilities"
+    },
+    {
+      "name": "LegacyJB",
+      "filename": "LegacyJB-1.2.1.elf",
+      "url": "https://github.com/Phoenixx1202/LegacyJB/releases/download/1.2.1/LegacyJB.elf",
+      "description": "Herramientas de ejecución LegacyJB.",
+      "version": "1.2.1",
+      "category": "Jailbreak"
+    },
+    {
+      "name": "YetAnotherControllerEnabler",
+      "filename": "YetAnotherControllerEnabler-0.0.1.elf",
+      "url": "https://github.com/MegaCadeDev/YetAnotherControllerEnabler/releases/download/v0.0.1/YetAnotherControllerEnabler.elf",
+      "description": "YetAnotherControllerEnabler is a homebrew payload for a PS5. It lets a controller from another console play on the PS5 by publishing a virtual DualSense and filling that pad with the other controller's buttons and sticks. The console treats the virtual pad like a DualSense: it can be assigned to a player, and games read it as a normal controller.",
+      "version": "v0.0.1",
+      "category": "Utilities"
+    },
+    {
+      "name": "Payloads-erickorn",
+      "filename": "kstuff1.13-fpkg-dr-test8-rest-Payloads.elf",
+      "url": "https://github.com/erickorn/Payloads-erickorn/releases/download/Payloads/kstuff1.13-fpkg-dr-test8-rest.elf",
+      "description": "Payloads personales",
+      "version": "Payloads",
+      "category": "Utilities"
+    },
+    {
+      "name": "PS5-TabShifter",
+      "filename": "TabShifter-1.4.0.elf",
+      "url": "https://github.com/xvvulcanvx/PS5-TabShifter/releases/download/v1.4.0/TabShifter.elf",
+      "description": "Standalone PS5 on-console payload to move apps between Games/Media tabs and hide offline PSN bloatware (Universal FW 5.00 – 13.60)",
+      "version": "v1.4.0",
+      "category": "Utilities"
+    },
+    {
+      "name": "NeoEnabler",
+      "filename": "neo-manager-0.7.0.elf",
+      "url": "https://github.com/gasb07/NeoEnabler/releases/download/0.7.0/neo-manager.elf",
+      "description": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
+      "version": "0.7.0",
+      "category": "System and Mounts"
+    },
+    {
+      "name": "ps5-fpsunlocker-gta6",
+      "filename": "GTAVI.UnlockFPS_v1.16.elf",
+      "url": "https://github.com/HSgod/ps5-fpsunlocker-gta6/releases/download/v1.16/GTAVI.UnlockFPS_v1.16.elf",
+      "description": "Unlock FPS on Grand Theft Auto VI for jailbroken PS5",
+      "version": "v1.16",
+      "category": "Development"
+    }
+  ]
 }
